@@ -1,0 +1,35 @@
+digraph  {
+0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
+"-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
+1 [class=active, fontsize=12, label=action_session_start];
+2 [class=active, fontsize=12, label=action_unlikely_intent];
+3 [class=active, fontsize=12, label=action_check_existence];
+10 [class=active, fontsize=12, label=action_unlikely_intent];
+11 [class=active, fontsize=12, label=utter_faq_whatispokemon];
+12 [class=active, fontsize=12, label=utter_did_that_help];
+13 [class=active, fontsize=12, label=action_unlikely_intent];
+14 [class=active, fontsize=12, label=utter_favorite_pokemon];
+15 [class="intent dashed active", label="  ?  ", shape=rect];
+16 [class="intent active", fillcolor=lightblue, label="/confirm_exist", shape=rect, style=filled];
+17 [class="intent active", fillcolor=lightblue, label="/confirm_exist", shape=rect, style=filled];
+18 [class="intent active", fillcolor=lightblue, label="/what_is_pokemon", shape=rect, style=filled];
+19 [class="intent active", fillcolor=lightblue, label="/what_is_pokemon", shape=rect, style=filled];
+20 [class="intent active", fillcolor=lightblue, label="/favorite_pokemon", shape=rect, style=filled];
+0 -> "-1"  [class="", key=NONE, label=""];
+0 -> 1  [class=active, key=NONE, label=""];
+1 -> 16  [class=active, key=0];
+2 -> 3  [class=active, key=NONE, label=""];
+3 -> 17  [class=active, key=0];
+3 -> 18  [class=active, key=0];
+3 -> 19  [class=active, key=0];
+10 -> 11  [class=active, key=NONE, label=""];
+11 -> 12  [class=active, key=NONE, label=""];
+12 -> 20  [class=active, key=0];
+13 -> 14  [class=active, key=NONE, label=""];
+14 -> 15  [class=active, key=NONE, label=""];
+16 -> 2  [class=active, key=0];
+17 -> 2  [class=active, key=0];
+18 -> 2  [class=active, key=0];
+19 -> 10  [class=active, key=0];
+20 -> 13  [class=active, key=0];
+}

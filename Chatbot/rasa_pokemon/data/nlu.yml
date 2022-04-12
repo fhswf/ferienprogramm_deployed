@@ -1,0 +1,610 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - Grüß Gott!
+    - Guten Tag!
+    - Guten Tag bot
+    - Guten Tag lieber bot
+    - Hallo.
+    - Sag mal hallo
+    - Guten Mittag
+    - Guten Abend
+    - Hallo du da
+    - Hallo du bot
+    - Hallihallo
+    - Hallöle
+    - Hallöchen
+    - Hallo lieber bot.
+    - Hallo bot.
+    - Hey!
+    - Hey robo
+    - sag hallo
+    - begrüß uns bitte
+    - Hey bot
+    - Hey bot kannst du hallo sagen
+    - Hi
+    - Hi bot kannst du hallo sagen
+    - Hi hallo
+    - Mahlzeit!
+    - Moin!
+    - Moin, bot kannst du hallo sagen
+    - Moin moin!
+    - Na du?!
+    - Na du, bot
+    - Na du sag mal hallo
+    - Na du bot, sag mal hallo
+    - Sag mal hallo.
+    - Kannst du hallo sagen
+    - Kannst mich begrüßen
+    - Kannst du uns begrüßen
+    - sei gegrüßt
+    - sei gegrüßt bot
+    - Servus
+    - Servus bot
+    - hi bot
+    - huhu bot
+    - huhu du da
+    - huhu hallo
+    - huhu
+    - huhu sag mal hallo
+- intent: goodbye
+  examples: |
+    - Schönen Abend noch
+    - Auf Wiederschauen
+    - Auf Wiederschauen bot
+    - auf wiedersehen
+    - Auf Wiedersehen bot
+    - Auf Wiedersehen, chat bot.
+    - bis bald
+    - bis dann
+    - bis demnächst
+    - bis denn
+    - bis denne
+    - bis die Tage
+    - Bis morgen
+    - bis nachher
+    - Bis später
+    - bis zum nächsten Mal
+    - bis bald bot
+    - bis dann bot
+    - bis demnächst bot
+    - bis denn bot
+    - bis die Tage bot
+    - Bis morgen bot
+    - bis nachher bot
+    - Bis später bot
+    - bis zum nächsten Mal bot
+    - Bis zum nächsten Mal. Tschau.
+    - bye
+    - bot
+    - Ciao.
+    - Ciaui
+    - Ich gehe jetzt
+    - Ich verabschiede mich jetzt
+    - Mach es gut
+    - Machs gut!
+    - Man sieht sich!
+    - Pass gut auf dich auf!
+    - Schönen Tag
+    - schönen tag noch
+    - Schönes Wochenende
+    - Schön Feierabend
+    - Tschau
+    - tschüs
+    - tschüs bot
+    - Tschüss.
+    - Tschüssi
+    - Tschüss chat bot.
+    - Wir sehen uns!
+    - Wir sehen uns das nächste mal
+- intent: affirm
+  examples: |
+    - Alles klar.
+    - Alles klar bot
+    - auf jeden fall
+    - Dann erzähl mal.
+    - Dann erzähl mal bot
+    - gern
+    - gern bot
+    - Gerne.
+    - Gerne. Ja.
+    - Ich will mehr darüber wissen.
+    - ja
+    - ja bot
+    - Ja.
+    - Ja bitte.
+    - Ja doch, erzähl mal.
+    - Ja erzähl mal.
+    - Ja erzähl mal noch ein bisschen.
+    - Ja erzähl mal noch ein bisschen mehr.
+    - Ja, erzähl mal was.
+    - Ja gerne.
+    - Ja ja doch.
+    - Ja ja, hab ich.
+    - Ja klar.
+    - Jo.
+    - Jop
+    - Jops
+    - johr
+    - Na gut.
+    - Na immer mehr.
+    - na klar
+    - Na klar.
+    - Natürlich.
+    - Noch mehr.
+    - Erzähle mir mehr
+    - Erzähle noch mehr
+    - klar erzähl
+    - ja mach.
+    - ja schieß los.
+    - nu klar
+    - ok
+    - okay
+    - Okay.
+    - Okay, dann kommen wir mal wieder.
+    - Sehr gern.
+    - Sehr gern bot
+    - Na klar bot
+    - Natürlich bot
+    - nu klar bot
+    - ok bot
+    - okay bot
+- intent: deny
+  examples: |
+    - nein
+    - erzähl keinen
+    - niemals
+    - ich glaube nicht
+    - ne
+    - nö
+    - wirklich nicht
+    - glaube nicht
+    - nönö
+    - denke nicht
+    - glaube ich dir nicht
+    - als ob
+    - ich glaube nein
+    - nicht wirklich
+    - erzähl nicht
+    - laber nicht
+- intent: didnt_understand
+  examples: |
+    - Hä?
+    - Versteh ich nicht.
+    - Ich verstehe dich nicht.
+    - Was meinst du?
+    - Oh man.
+    - Was soll das denn jetzt?
+    - Hä wieso?
+    - Hä was machst du?
+    - Was soll das?
+    - Wieso passiert denn das jetzt?
+    - Wieso machst du sowas?
+    - Wieso fragst du jetzt sowas?
+- intent: mood_great
+  examples: |
+    - Perfekt
+    - Sehr gut
+    - großartig
+    - super
+    - wundervoll
+    - Ich fühle mich gut
+    - Ich fühle mich super
+    - wunderbar
+    - richtig gut
+    - gut
+    - gut und dir?
+    - super und dir?
+    - ganz okay dir?
+    - sehr gut und dir?
+    - danke gut und dir?
+- intent: mood_unhappy
+  examples: |
+    - traurig
+    - langweilig
+    - gelangweilt
+    - schlecht
+    - schlimm
+    - echt doof
+    - echt schlimm
+    - nicht gut
+    - ich fühle mich nicht gut
+    - ich bin traurig
+    - mir geht es nicht gut
+    - mir geht es schlecht
+    - mir geht es mies
+    - ich bin sehr traurig
+    - sad
+    - very sad
+    - unhappy
+    - bad
+    - very bad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - bist du ein bot?
+    - bist du echt?
+    - Bist du ein Mensch?
+    - Gibt es dich wirklich?
+    - Bist du ein Chatbot?
+    - Rede ich mit einem Bot?
+    - Rede ich mit einem Menschen?
+    - Bist du menschlich?
+- intent: demand_joke
+  examples: |
+    - erzähle einen witz
+    - erzähle einen witz chat bot
+    - erzähle einen witz bot
+    - Erzählst du mir einen Witz?
+    - erzähle mir bitte einen witz
+    - erzähle mir bitte einen witz chat bot
+    - erzähle mir bitte einen witz bot
+    - kannst du mir einen witz erzählen bot
+    - kannst du mir einen witz erzählen
+    - kannst du witze erzählen
+    - bot kannst du witze erzählen
+    - kannst du bitte einen witz erzählen
+    - bist du gut im witze erzählen
+    - kennst du witze
+    - kennst du viele witze
+    - Kanst du scherze machen
+    - scherzt du manchmal
+    - erzähle mir etwas lustiges
+    - erzähle mir bitte etwas lustiges
+    - bist du witzig
+    - kannst du witzig sein
+    - kannst du späße machen
+    - Verstehst du spass
+    - Verstehst du spaß
+    - Bist du ein Comedian
+    - kannst du comedy
+    - Bist du ein komiker
+    - Bist du ein komisch
+    - Kannst du komisch sein
+    - sag was lustiges
+    - sag was lustiges bot
+    - kannst du was lustiges sagen
+    - kannst du was lustiges erzählen
+    - kannst du was lustiges machen
+    - kennst du lustige witze
+    - kennst du lustige späße
+    - sei mal lustig
+    - das ist nicht lustig hier
+    - mache etwas lustiges
+    - sei mal bitte witzig
+    - sei bitte witzig
+    - kennst du witziges
+    - sag doch mal was lustiges
+    - Witz
+    - Kannst du witze erzählen bot
+    - hast du einen Witz zu Pokemon
+    - erzähl einen pokemon witz
+    - gib mir einen lustigen Satz
+    - kennst du witzige Sätze
+    - bring mich zum lachen
+    - chatbot erzähl einen witz
+    - nenne mir witze
+    - sag einen witz
+    - kennst du witzige Pokemonwitze
+    - kennst du pokemonwitze
+    - nenne mir einen witz mit pokemon
+    - pokemonwitz
+- intent: what_is_pokemon
+  examples: |
+    - Erzähl mir was über Pokemon.
+    - Sag mir was Pokemon ist.
+    - Kannst du mir erklären was Pokemon ist?
+    - Sagst du mir was Pokemon ist?
+    - Was sind Pokemon?
+    - Wer ist Pokemon?
+    - Was sind Pokemons?
+    - Erzähl was über Pokemons
+    - Erzähl mir mehr über Pokemon.
+    - Ist [Piepi](pokemon_name) ein Pokemon
+    - Was ist ein Pokemon?
+- intent: how_many
+  examples: |
+    - Wie viele Pokemon gibt es?
+    - Gibt es viele Pokemon?
+    - Gibt es mehrere Pokemon?
+    - Anzahl der Pokemon
+    - Anzahl von Pokemon
+- intent: ask_berries
+  examples: |
+    - Was sind Beeren?
+    - Sag mir mehr über Beeren.
+    - Gibt es Beeren?
+    - Wozu sind Beeren gut?
+    - Wobei helfen beeren?
+    - Erzähl mir was über Beeren.
+- intent: ash
+  examples: |
+    - Wer ist Ash?
+    - Erzahl mir was über Ash?
+    - Wer ist der Protagonist?
+    - Wer ist Ash Ketchum?
+    - Woher kommt Ash?
+    - Wer ist Ash Mutter?
+    - Wie heißt der Protagonist?
+    - Wer ist der Hauptcharakter?
+    - Wie heißt Ash mit Nachnamen?
+    - Was ist Ashs Nachname?
+    - Wer ist Ashs Mutter?
+    - Wie heißt Ashs Heimatstadt?
+    - Wer reist in der Pokemonserie herum?
+    - Wer ist Pikachus Trainer?
+- intent: pikachu
+  examples: |
+    - Wer ist Pikachu?
+    - Was ist Pikachu?
+    - Erzähl was über Pikachu.
+    - Nenn mir Fakten über Pikachu.
+    - Was ist Ashs Pokemon?
+    - Welches Pokemon hat Ash?
+    - Was ist Ash erstes Pokemon?
+    - Wer sitzt bei Ash auf der Schulter?
+    - Mit wem reist Ash?
+    - Was ist ein Pikachu?
+    - Kennst du Pikachu?
+    - Kennst du Pikatchu?
+    - Was ist Pikatchu?
+    - Wer ist Pikatchu?
+    - Kennst du Pikatschu?
+    - Wer ist Pikatschu?
+- intent: history
+  examples: |
+    - Wann wurde Pokemon kreiert?
+    - Wer hat sich Pokemon ausgedacht?
+    - Seit wann gibt es Pokemon?
+    - Wie lange gibt es Pokemon?
+    - Was ist die Geschichte von Pokemon?
+    - Erzähl mir etwas über die Geschichte.
+- intent: regions
+  examples: |
+    - Welche Regionen gibt es?
+    - Wo spielt Pokemon?
+    - Was ist eine Region?
+    - Was ist Kanto
+    - Was ist Kalos?
+    - Wo leben Pokemon?
+    - Wie ist die Welt der Pokemon aufgeteilt?
+    - In was ist die Pokemonwelt eingeteilt?
+    - Wie ist die Welt eingeteilt?
+    - Wie leben Pokemon?
+- intent: types
+  examples: |
+    - Was für Typen gibt es?
+    - In welche Kategorien sind Pokemon eingeteilt?
+    - Was sind Typen?
+    - Gibt es Typen?
+    - Nenne mir Pokemontypen.
+    - Was sind Pokemon typen.
+    - Wie sind Pokemon kategorisiert?
+    - Was ist ein Typ?
+    - Nenne mir Typen.
+    - Sag mir welche Typen von Pokemon es gibt.
+- intent: forms
+  examples: |
+    - Gibt es verschiedene Pokemonformen?
+    - Hat ein Pokemon mehrere Formen?
+    - Gibt es regionale Formen?
+    - Können Pokemon mehrere Formen haben?
+    - Gibt es Pokemon mit mehreren Formen?
+- intent: favorite_pokemon
+  examples: |
+    - Was ist dein Liebling?
+    - Hast du ein Lieblingspokemon?
+    - Wer ist dein Favorit unter den Pokemon?
+    - Hast du einen Favoriten?
+    - Wer ist dein Liebling?
+    - Was ist dein Lieblingspokemon.
+    - Was ist dein Lieblingspokemon?
+- intent: poke_partner
+  examples: |
+    - Was wäre mein Pokemon?
+    - Welche Pokemons würdest du mir geben?
+    - Was wäre mein Starter?
+    - Welches Pokemon wäre meins?
+    - Kannst du mir ein Pokemon geben?
+    - Kannst du mir ein Starterpokemon geben?
+    - Weist du mir ein Pokemon zu?
+    - Kannst du mir ein Starterpokemon zuweisen?
+    - Was ist mein Pokemon?
+    - Welches Pokemon ist in meinem Team?
+    - Was ist mein Starter?
+    - Wer ist mein Starter?
+    - Welches Pokemon ist mein Starter?
+    - Mit welchem Pokemon würde ich starten?
+    - Welches Pokemon würdest du mir geben?
+    - Was wäre wohl mein Starter-Pokemon?
+    - Kannst du mir mitteilen welches Pokemon mein Starter pokemon wäre?
+    - Sag mir was mein Starter pokemon ist.
+    - Nenn mir mein Pokemon.
+    - Sag mir was mein Pokemon ist.
+    - Sag mir den Namen von meinem Pokemon.
+    - Nenn mir meinen Starter.
+- intent: confirm_exist
+  examples: |
+    - Ist [Bisasam](pokemon_name) ein Pokemon?
+    - Kennst du [Piepi](pokemon_name)?
+    - Ist [Dragoran](pokemon_name) ein Pokemon?
+    - Existiert [Vulpix](pokemon_name)?
+    - Hast du schon von [Dragonir](pokemon_name) gehört?
+    - Kennst du [Raichu](pokemon_name)?
+    - Gibt es [Taubsi](pokemon_name)?
+    - Gibt es ein Pokemon namens [Glurak](pokemon_name)?
+    - Sind [Kingler](pokemon_name) und [Bisaflor](pokemon_name) Pokemon?
+    - Kennst du [Schiggy](pokemon_name)?
+    - Kennst du [Zubat](pokemon_name), [Glumanda](pokemon_name) und [Schiggy](pokemon_name)
+    - Existiert ein Pokemon mit dem Namen [Relaxo](pokemon_name)?
+    - Gibt es ein Pokemon mit Namen [Enton](pokemon_name)?
+    - Kennst du [Garados](pokemon_name) und [Karpardor](pokemon_name)?
+    - Ist [Nidoran](pokemon_name) im Pokedex?
+    - Findet man [Mew](pokemon_name) in Pokemon?
+    - Kennst du [Pixi](pokemon_name)
+    - Ist [Raichu](pokemon_name) ein Pokemon
+    - Ist [Zabdiop](pokemon_name) ein Pokemon?
+    - Kann man [Rasa](pokemon_name) ein Pokemon nennen?
+- synonym: pokemon
+  examples: |
+    - pokemons
+    - pokimon
+    - pokmon
+    - pokehmon
+- lookup: pokemon_name
+  examples: |
+    - Bisasam
+    - Bisaknosp
+    - Bisaflor
+    - Glumanda
+    - Glutexo
+    - Glurak
+    - Schiggy
+    - Schillok
+    - Turtok
+    - Raupy
+    - Safcon
+    - Smettbo
+    - Hornliu
+    - Kokuna
+    - Bibor
+    - Taubsi
+    - Tauboga
+    - Tauboss
+    - Rattfratz
+    - Rattikarl
+    - Habitak
+    - Ibitak
+    - Rettan
+    - Arbok
+    - Pikachu
+    - Raichu
+    - Sandan
+    - Sandamer
+    - Nidoran
+    - Nidorina
+    - Nidoqueen
+    - Nidoran
+    - Nidorino
+    - Nidoking
+    - Piepi
+    - Pixi
+    - Vulpix
+    - Vulnona
+    - Pummeluff
+    - Knuddeluff
+    - Zubat
+    - Golbat
+    - Myrapla
+    - Duflor
+    - Giflor
+    - Paras
+    - Parasek
+    - Bluzuk
+    - Omot
+    - Digda
+    - Digdri
+    - Mauzi
+    - Snobilikat
+    - Enton
+    - Entoron
+    - Menki
+    - Rasaff
+    - Fukano
+    - Arkani
+    - Quapsel
+    - Quaputzi
+    - Quappo
+    - Abra
+    - Kadabra
+    - Simsala
+    - Machollo
+    - Maschock
+    - Machomei
+    - Knofensa
+    - Ultrigaria
+    - Sarzenia
+    - Tentacha
+    - Tentoxa
+    - Kleinstein
+    - Georok
+    - Geowaz
+    - Ponita
+    - Gallopa
+    - Flegmon
+    - Lahmus
+    - Magnetilo
+    - Magneton
+    - Porenta
+    - Dodu
+    - Dodri
+    - Jurob
+    - Jugong
+    - Sleima
+    - Sleimok
+    - Muschas
+    - Austos
+    - Nebulak
+    - Alpollo
+    - Gengar
+    - Onix
+    - Traumato
+    - Hypno
+    - Krabby
+    - Kingler
+    - Voltobal
+    - Lektrobal
+    - Owei
+    - Kokowei
+    - Tragosso
+    - Knogga
+    - Kicklee
+    - Nockchan
+    - Schlurp
+    - Smogon
+    - Smogmog
+    - Rihorn
+    - Rizeros
+    - Chaneira
+    - Tangela
+    - Kangama
+    - Seeper
+    - Seemon
+    - Goldini
+    - Golking
+    - Sterndu
+    - Starmie
+    - Pantimos
+    - Sichlor
+    - Rossana
+    - Elektek
+    - Magmar
+    - Pinsir
+    - Tauros
+    - Karpador
+    - Garados
+    - Lapras
+    - Ditto
+    - Evoli
+    - Aquana
+    - Blitza
+    - Flamara
+    - Porygon
+    - Amonitas
+    - Amoroso
+    - Kabuto
+    - Kabutops
+    - Aerodactyl
+    - Relaxo
+    - Arktos
+    - Zapdos
+    - Lavados
+    - Dratini
+    - Dragonir
+    - Dragoran
+    - Mewtu
+    - Mew

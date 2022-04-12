@@ -1,0 +1,1062 @@
+{
+"pokemon":[
+ {
+  "id": "1",
+  "name_de": "Bisasam",
+  "name_eng": "Bulbasaur",
+  "typ": "Pflanze - Gift",
+  "kategorie": "Samen"
+ },
+ {
+  "id": "2",
+  "name_de": "Bisaknosp",
+  "name_eng": "Ivysaur",
+  "typ": "Pflanze - Gift",
+  "kategorie": "Samen"
+ },
+ {
+  "id": "3",
+  "name_de": "Bisaflor",
+  "name_eng": "Venusaur",
+  "typ": "Pflanze - Gift",
+  "kategorie": "Samen"
+ },
+ {
+  "id": "4",
+  "name_de": "Glumanda",
+  "name_eng": "Charmander",
+  "typ": "Feuer",
+  "kategorie": "Echse"
+ },
+ {
+  "id": "5",
+  "name_de": "Glutexo",
+  "name_eng": "Charmeleon",
+  "typ": "Feuer",
+  "kategorie": "Echse"
+ },
+ {
+  "id": "6",
+  "name_de": "Glurak",
+  "name_eng": "Charizard",
+  "typ": "Feuer - Flug",
+  "kategorie": "Drache"
+ },
+ {
+  "id": "7",
+  "name_de": "Schiggy",
+  "name_eng": "Squirtle",
+  "typ": "Wasser",
+  "kategorie": "Minikröte"
+ },
+ {
+  "id": "8",
+  "name_de": "Schillok",
+  "name_eng": "Wartortle",
+  "typ": "Wasser",
+  "kategorie": "Kröte"
+ },
+ {
+  "id": "9",
+  "name_de": "Turtok",
+  "name_eng": "Blastoise",
+  "typ": "Wasser",
+  "kategorie": "Panzertier"
+ },
+ {
+  "id": "10",
+  "name_de": "Raupy",
+  "name_eng": "Caterpie",
+  "typ": "Käfer",
+  "kategorie": "Raupe"
+ },
+ {
+  "id": "11",
+  "name_de": "Safcon",
+  "name_eng": "Metapod",
+  "typ": "Käfer",
+  "kategorie": "Kokon"
+ },
+ {
+  "id": "12",
+  "name_de": "Smettbo",
+  "name_eng": "Butterfree",
+  "typ": "Käfer - Flug",
+  "kategorie": "Falter"
+ },
+ {
+  "id": "13",
+  "name_de": "Hornliu",
+  "name_eng": "Weedle",
+  "typ": "Käfer - Gift",
+  "kategorie": "Raupe"
+ },
+ {
+  "id": "14",
+  "name_de": "Kokuna",
+  "name_eng": "Kakuna",
+  "typ": "Käfer - Gift",
+  "kategorie": "Kokon"
+ },
+ {
+  "id": "15",
+  "name_de": "Bibor",
+  "name_eng": "Beedrill",
+  "typ": "Käfer - Gift",
+  "kategorie": "Giftbiene"
+ },
+ {
+  "id": "16",
+  "name_de": "Taubsi",
+  "name_eng": "Pidgey",
+  "typ": "Normal - Flug",
+  "kategorie": "Kleinvogel"
+ },
+ {
+  "id": "17",
+  "name_de": "Tauboga",
+  "name_eng": "Pidgeotto",
+  "typ": "Normal - Flug",
+  "kategorie": "Vogel"
+ },
+ {
+  "id": "18",
+  "name_de": "Tauboss",
+  "name_eng": "Pidgeot",
+  "typ": "Normal - Flug",
+  "kategorie": "Vogel"
+ },
+ {
+  "id": "19",
+  "name_de": "Rattfratz",
+  "name_eng": "Rattata",
+  "typ": "Normal",
+  "kategorie": "Maus"
+ },
+ {
+  "id": "20",
+  "name_de": "Rattikarl",
+  "name_eng": "Raticate",
+  "typ": "Normal",
+  "kategorie": "Maus"
+ },
+ {
+  "id": "21",
+  "name_de": "Habitak",
+  "name_eng": "Spearow",
+  "typ": "Normal - Flug",
+  "kategorie": "Kleinvogel"
+ },
+ {
+  "id": "22",
+  "name_de": "Ibitak",
+  "name_eng": "Fearow",
+  "typ": "Normal - Flug",
+  "kategorie": "Pickvogel"
+ },
+ {
+  "id": "23",
+  "name_de": "Rettan",
+  "name_eng": "Ekans",
+  "typ": "Gift",
+  "kategorie": "Schlange"
+ },
+ {
+  "id": "24",
+  "name_de": "Arbok",
+  "name_eng": "Arbok",
+  "typ": "Gift",
+  "kategorie": "Kobra"
+ },
+ {
+  "id": "25",
+  "name_de": "Pikachu",
+  "name_eng": "Pikachu",
+  "typ": "Elektro",
+  "kategorie": "Maus"
+ },
+ {
+  "id": "26",
+  "name_de": "Raichu",
+  "name_eng": "Raichu",
+  "typ": "Elektro",
+  "kategorie": "Maus"
+ },
+ {
+  "id": "27",
+  "name_de": "Sandan",
+  "name_eng": "Sandshrew",
+  "typ": "Boden",
+  "kategorie": "Maus"
+ },
+ {
+  "id": "28",
+  "name_de": "Sandamer",
+  "name_eng": "Sandslash",
+  "typ": "Boden",
+  "kategorie": "Maus"
+ },
+ {
+  "id": "29",
+  "name_de": "Nidoran♀",
+  "name_eng": "Nidoran♀",
+  "typ": "Gift",
+  "kategorie": "Giftdorn"
+ },
+ {
+  "id": "30",
+  "name_de": "Nidorina",
+  "name_eng": "Nidorina",
+  "typ": "Gift",
+  "kategorie": "Giftdorn"
+ },
+ {
+  "id": "31",
+  "name_de": "Nidoqueen",
+  "name_eng": "Nidoqueen",
+  "typ": "Gift - Boden",
+  "kategorie": "Bohrer"
+ },
+ {
+  "id": "32",
+  "name_de": "Nidoran♂",
+  "name_eng": "Nidoran♂",
+  "typ": "Gift",
+  "kategorie": "Giftdorn"
+ },
+ {
+  "id": "33",
+  "name_de": "Nidorino",
+  "name_eng": "Nidorino",
+  "typ": "Gift",
+  "kategorie": "Giftdorn"
+ },
+ {
+  "id": "34",
+  "name_de": "Nidoking",
+  "name_eng": "Nidoking",
+  "typ": "Gift - Boden",
+  "kategorie": "Bohrer"
+ },
+ {
+  "id": "35",
+  "name_de": "Piepi",
+  "name_eng": "Clefairy",
+  "typ": "Fee",
+  "kategorie": "Fee"
+ },
+ {
+  "id": "36",
+  "name_de": "Pixi",
+  "name_eng": "Clefable",
+  "typ": "Fee",
+  "kategorie": "Fee"
+ },
+ {
+  "id": "37",
+  "name_de": "Vulpix",
+  "name_eng": "Vulpix",
+  "typ": "Feuer",
+  "kategorie": "Fuchs"
+ },
+ {
+  "id": "38",
+  "name_de": "Vulnona",
+  "name_eng": "Ninetales",
+  "typ": "Feuer",
+  "kategorie": "Fuchs"
+ },
+ {
+  "id": "39",
+  "name_de": "Pummeluff",
+  "name_eng": "Jigglypuff",
+  "typ": "Normal - Fee",
+  "kategorie": "Ballon"
+ },
+ {
+  "id": "40",
+  "name_de": "Knuddeluff",
+  "name_eng": "Wigglytuff",
+  "typ": "Normal - Fee",
+  "kategorie": "Ballon"
+ },
+ {
+  "id": "41",
+  "name_de": "Zubat",
+  "name_eng": "Zubat",
+  "typ": "Gift - Flug",
+  "kategorie": "Fledermaus"
+ },
+ {
+  "id": "42",
+  "name_de": "Golbat",
+  "name_eng": "Golbat",
+  "typ": "Gift - Flug",
+  "kategorie": "Fledermaus"
+ },
+ {
+  "id": "43",
+  "name_de": "Myrapla",
+  "name_eng": "Oddish",
+  "typ": "Pflanze - Gift",
+  "kategorie": "Unkraut"
+ },
+ {
+  "id": "44",
+  "name_de": "Duflor",
+  "name_eng": "Gloom",
+  "typ": "Pflanze - Gift",
+  "kategorie": "Unkraut"
+ },
+ {
+  "id": "45",
+  "name_de": "Giflor",
+  "name_eng": "Vileplume",
+  "typ": "Pflanze - Gift",
+  "kategorie": "Blume"
+ },
+ {
+  "id": "46",
+  "name_de": "Paras",
+  "name_eng": "Paras",
+  "typ": "Käfer - Pflanze",
+  "kategorie": "Pilz"
+ },
+ {
+  "id": "47",
+  "name_de": "Parasek",
+  "name_eng": "Parasect",
+  "typ": "Käfer - Pflanze",
+  "kategorie": "Pilz"
+ },
+ {
+  "id": "48",
+  "name_de": "Bluzuk",
+  "name_eng": "Venonat",
+  "typ": "Käfer - Gift",
+  "kategorie": "Insekt"
+ },
+ {
+  "id": "49",
+  "name_de": "Omot",
+  "name_eng": "Venomoth",
+  "typ": "Käfer - Gift",
+  "kategorie": "Giftmotte"
+ },
+ {
+  "id": "50",
+  "name_de": "Digda",
+  "name_eng": "Diglett",
+  "typ": "Boden",
+  "kategorie": "Maulwurf"
+ },
+ {
+  "id": "51",
+  "name_de": "Digdri",
+  "name_eng": "Dugtrio",
+  "typ": "Boden",
+  "kategorie": "Maulwurf"
+ },
+ {
+  "id": "52",
+  "name_de": "Mauzi",
+  "name_eng": "Meowth",
+  "typ": "Normal",
+  "kategorie": "Katze"
+ },
+ {
+  "id": "53",
+  "name_de": "Snobilikat",
+  "name_eng": "Persian",
+  "typ": "Normal",
+  "kategorie": "Rassekatze"
+ },
+ {
+  "id": "54",
+  "name_de": "Enton",
+  "name_eng": "Psyduck",
+  "typ": "Wasser",
+  "kategorie": "Ente"
+ },
+ {
+  "id": "55",
+  "name_de": "Entoron",
+  "name_eng": "Golduck",
+  "typ": "Wasser",
+  "kategorie": "Ente"
+ },
+ {
+  "id": "56",
+  "name_de": "Menki",
+  "name_eng": "Mankey",
+  "typ": "Kampf",
+  "kategorie": "Schwein-Affe"
+ },
+ {
+  "id": "57",
+  "name_de": "Rasaff",
+  "name_eng": "Primeape",
+  "typ": "Kampf",
+  "kategorie": "Schwein-Affe"
+ },
+ {
+  "id": "58",
+  "name_de": "Fukano",
+  "name_eng": "Growlithe",
+  "typ": "Feuer",
+  "kategorie": "Hund"
+ },
+ {
+  "id": "59",
+  "name_de": "Arkani",
+  "name_eng": "Arcanine",
+  "typ": "Feuer",
+  "kategorie": "Legendär"
+ },
+ {
+  "id": "60",
+  "name_de": "Quapsel",
+  "name_eng": "Poliwag",
+  "typ": "Wasser",
+  "kategorie": "Kaulquappe"
+ },
+ {
+  "id": "61",
+  "name_de": "Quaputzi",
+  "name_eng": "Poliwhirl",
+  "typ": "Wasser",
+  "kategorie": "Kaulquappe"
+ },
+ {
+  "id": "62",
+  "name_de": "Quappo",
+  "name_eng": "Poliwrath",
+  "typ": "Wasser - Kampf",
+  "kategorie": "Kaulquappe"
+ },
+ {
+  "id": "63",
+  "name_de": "Abra",
+  "name_eng": "Abra",
+  "typ": "Psycho",
+  "kategorie": "Psi"
+ },
+ {
+  "id": "64",
+  "name_de": "Kadabra",
+  "name_eng": "Kadabra",
+  "typ": "Psycho",
+  "kategorie": "Psi"
+ },
+ {
+  "id": "65",
+  "name_de": "Simsala",
+  "name_eng": "Alakazam",
+  "typ": "Psycho",
+  "kategorie": "Psi"
+ },
+ {
+  "id": "66",
+  "name_de": "Machollo",
+  "name_eng": "Machop",
+  "typ": "Kampf",
+  "kategorie": "Kraftprotz"
+ },
+ {
+  "id": "67",
+  "name_de": "Maschock",
+  "name_eng": "Machoke",
+  "typ": "Kampf",
+  "kategorie": "Kraftprotz"
+ },
+ {
+  "id": "68",
+  "name_de": "Machomei",
+  "name_eng": "Machamp",
+  "typ": "Kampf",
+  "kategorie": "Kraftprotz"
+ },
+ {
+  "id": "69",
+  "name_de": "Knofensa",
+  "name_eng": "Bellsprout",
+  "typ": "Pflanze - Gift",
+  "kategorie": "Blume"
+ },
+ {
+  "id": "70",
+  "name_de": "Ultrigaria",
+  "name_eng": "Weepinbell",
+  "typ": "Pflanze - Gift",
+  "kategorie": "Fliegentot"
+ },
+ {
+  "id": "71",
+  "name_de": "Sarzenia",
+  "name_eng": "Victreebel",
+  "typ": "Pflanze - Gift",
+  "kategorie": "Fliegentot"
+ },
+ {
+  "id": "72",
+  "name_de": "Tentacha",
+  "name_eng": "Tentacool",
+  "typ": "Wasser - Gift",
+  "kategorie": "Qualle"
+ },
+ {
+  "id": "73",
+  "name_de": "Tentoxa",
+  "name_eng": "Tentacruel",
+  "typ": "Wasser - Gift",
+  "kategorie": "Qualle"
+ },
+ {
+  "id": "74",
+  "name_de": "Kleinstein",
+  "name_eng": "Geodude",
+  "typ": "Gestein - Boden",
+  "kategorie": "Gestein"
+ },
+ {
+  "id": "75",
+  "name_de": "Georok",
+  "name_eng": "Graveler",
+  "typ": "Gestein - Boden",
+  "kategorie": "Gestein"
+ },
+ {
+  "id": "76",
+  "name_de": "Geowaz",
+  "name_eng": "Golem",
+  "typ": "Gestein - Boden",
+  "kategorie": "Urgestein"
+ },
+ {
+  "id": "77",
+  "name_de": "Ponita",
+  "name_eng": "Ponyta",
+  "typ": "Feuer",
+  "kategorie": "Feuerpferd"
+ },
+ {
+  "id": "78",
+  "name_de": "Gallopa",
+  "name_eng": "Rapidash",
+  "typ": "Feuer",
+  "kategorie": "Feuerpferd"
+ },
+ {
+  "id": "79",
+  "name_de": "Flegmon",
+  "name_eng": "Slowpoke",
+  "typ": "Wasser - Psycho",
+  "kategorie": "Schnarcher"
+ },
+ {
+  "id": "80",
+  "name_de": "Lahmus",
+  "name_eng": "Slowbro",
+  "typ": "Wasser - Psycho",
+  "kategorie": "Symbiose"
+ },
+ {
+  "id": "81",
+  "name_de": "Magnetilo",
+  "name_eng": "Magnemite",
+  "typ": "Elektro - Stahl",
+  "kategorie": "Magnet"
+ },
+ {
+  "id": "82",
+  "name_de": "Magneton",
+  "name_eng": "Magneton",
+  "typ": "Elektro - Stahl",
+  "kategorie": "Magnet"
+ },
+ {
+  "id": "83",
+  "name_de": "Porenta",
+  "name_eng": "Farfetch’d",
+  "typ": "Normal - Flug",
+  "kategorie": "Wildente"
+ },
+ {
+  "id": "84",
+  "name_de": "Dodu",
+  "name_eng": "Doduo",
+  "typ": "Normal - Flug",
+  "kategorie": "Duovogel"
+ },
+ {
+  "id": "85",
+  "name_de": "Dodri",
+  "name_eng": "Dodrio",
+  "typ": "Normal - Flug",
+  "kategorie": "Trivogel"
+ },
+ {
+  "id": "86",
+  "name_de": "Jurob",
+  "name_eng": "Seel",
+  "typ": "Wasser",
+  "kategorie": "Seehund"
+ },
+ {
+  "id": "87",
+  "name_de": "Jugong",
+  "name_eng": "Dewgong",
+  "typ": "Wasser - Eis",
+  "kategorie": "Seehund"
+ },
+ {
+  "id": "88",
+  "name_de": "Sleima",
+  "name_eng": "Grimer",
+  "typ": "Gift",
+  "kategorie": "Schlamm"
+ },
+ {
+  "id": "89",
+  "name_de": "Sleimok",
+  "name_eng": "Muk",
+  "typ": "Gift",
+  "kategorie": "Schlamm"
+ },
+ {
+  "id": "90",
+  "name_de": "Muschas",
+  "name_eng": "Shellder",
+  "typ": "Wasser",
+  "kategorie": "Muschel"
+ },
+ {
+  "id": "91",
+  "name_de": "Austos",
+  "name_eng": "Cloyster",
+  "typ": "Wasser - Eis",
+  "kategorie": "Muschel"
+ },
+ {
+  "id": "92",
+  "name_de": "Nebulak",
+  "name_eng": "Gastly",
+  "typ": "Geist - Gift",
+  "kategorie": "Gas"
+ },
+ {
+  "id": "93",
+  "name_de": "Alpollo",
+  "name_eng": "Haunter",
+  "typ": "Geist - Gift",
+  "kategorie": "Gas"
+ },
+ {
+  "id": "94",
+  "name_de": "Gengar",
+  "name_eng": "Gengar",
+  "typ": "Geist - Gift",
+  "kategorie": "Schatten"
+ },
+ {
+  "id": "95",
+  "name_de": "Onix",
+  "name_eng": "Onix",
+  "typ": "Gestein - Boden",
+  "kategorie": "Felsnatter"
+ },
+ {
+  "id": "96",
+  "name_de": "Traumato",
+  "name_eng": "Drowzee",
+  "typ": "Psycho",
+  "kategorie": "Hypnose"
+ },
+ {
+  "id": "97",
+  "name_de": "Hypno",
+  "name_eng": "Hypno",
+  "typ": "Psycho",
+  "kategorie": "Hypnose"
+ },
+ {
+  "id": "98",
+  "name_de": "Krabby",
+  "name_eng": "Krabby",
+  "typ": "Wasser",
+  "kategorie": "Krabbe"
+ },
+ {
+  "id": "99",
+  "name_de": "Kingler",
+  "name_eng": "Kingler",
+  "typ": "Wasser",
+  "kategorie": "Kneifer"
+ },
+ {
+  "id": "100",
+  "name_de": "Voltobal",
+  "name_eng": "Voltorb",
+  "typ": "Elektro",
+  "kategorie": "Ball"
+ },
+ {
+  "id": "101",
+  "name_de": "Lektrobal",
+  "name_eng": "Electrode",
+  "typ": "Elektro",
+  "kategorie": "Ball"
+ },
+ {
+  "id": "102",
+  "name_de": "Owei",
+  "name_eng": "Exeggcute",
+  "typ": "Pflanze - Psycho",
+  "kategorie": "Ei"
+ },
+ {
+  "id": "103",
+  "name_de": "Kokowei",
+  "name_eng": "Exeggutor",
+  "typ": "Pflanze - Psycho",
+  "kategorie": "Palmfrucht"
+ },
+ {
+  "id": "104",
+  "name_de": "Tragosso",
+  "name_eng": "Cubone",
+  "typ": "Boden",
+  "kategorie": "Einsam"
+ },
+ {
+  "id": "105",
+  "name_de": "Knogga",
+  "name_eng": "Marowak",
+  "typ": "Boden",
+  "kategorie": "Knochenfan"
+ },
+ {
+  "id": "106",
+  "name_de": "Kicklee",
+  "name_eng": "Hitmonlee",
+  "typ": "Kampf",
+  "kategorie": "Kicker"
+ },
+ {
+  "id": "107",
+  "name_de": "Nockchan",
+  "name_eng": "Hitmonchan",
+  "typ": "Kampf",
+  "kategorie": "Puncher"
+ },
+ {
+  "id": "108",
+  "name_de": "Schlurp",
+  "name_eng": "Lickitung",
+  "typ": "Normal",
+  "kategorie": "Schlecker"
+ },
+ {
+  "id": "109",
+  "name_de": "Smogon",
+  "name_eng": "Koffing",
+  "typ": "Gift",
+  "kategorie": "Giftwolke"
+ },
+ {
+  "id": "110",
+  "name_de": "Smogmog",
+  "name_eng": "Weezing",
+  "typ": "Gift",
+  "kategorie": "Giftwolke"
+ },
+ {
+  "id": "111",
+  "name_de": "Rihorn",
+  "name_eng": "Rhyhorn",
+  "typ": "Boden - Gestein",
+  "kategorie": "Stachler"
+ },
+ {
+  "id": "112",
+  "name_de": "Rizeros",
+  "name_eng": "Rhydon",
+  "typ": "Boden - Gestein",
+  "kategorie": "Bohrer"
+ },
+ {
+  "id": "113",
+  "name_de": "Chaneira",
+  "name_eng": "Chansey",
+  "typ": "Normal",
+  "kategorie": "Ei"
+ },
+ {
+  "id": "114",
+  "name_de": "Tangela",
+  "name_eng": "Tangela",
+  "typ": "Pflanze",
+  "kategorie": "Ranke"
+ },
+ {
+  "id": "115",
+  "name_de": "Kangama",
+  "name_eng": "Kangaskhan",
+  "typ": "Normal",
+  "kategorie": "Muttertier"
+ },
+ {
+  "id": "116",
+  "name_de": "Seeper",
+  "name_eng": "Horsea",
+  "typ": "Wasser",
+  "kategorie": "Drache"
+ },
+ {
+  "id": "117",
+  "name_de": "Seemon",
+  "name_eng": "Seadra",
+  "typ": "Wasser",
+  "kategorie": "Drache"
+ },
+ {
+  "id": "118",
+  "name_de": "Goldini",
+  "name_eng": "Goldeen",
+  "typ": "Wasser",
+  "kategorie": "Goldfisch"
+ },
+ {
+  "id": "119",
+  "name_de": "Golking",
+  "name_eng": "Seaking",
+  "typ": "Wasser",
+  "kategorie": "Goldfisch"
+ },
+ {
+  "id": "120",
+  "name_de": "Sterndu",
+  "name_eng": "Staryu",
+  "typ": "Wasser",
+  "kategorie": "Sternform"
+ },
+ {
+  "id": "121",
+  "name_de": "Starmie",
+  "name_eng": "Starmie",
+  "typ": "Wasser - Psycho",
+  "kategorie": "Mysteriös"
+ },
+ {
+  "id": "122",
+  "name_de": "Pantimos",
+  "name_eng": "Mr. Mime",
+  "typ": "Psycho - Fee",
+  "kategorie": "Sperre"
+ },
+ {
+  "id": "123",
+  "name_de": "Sichlor",
+  "name_eng": "Scyther",
+  "typ": "Käfer - Flug",
+  "kategorie": "Mantis"
+ },
+ {
+  "id": "124",
+  "name_de": "Rossana",
+  "name_eng": "Jynx",
+  "typ": "Eis - Psycho",
+  "kategorie": "Humanotyp"
+ },
+ {
+  "id": "125",
+  "name_de": "Elektek",
+  "name_eng": "Electabuzz",
+  "typ": "Elektro",
+  "kategorie": "Elektro"
+ },
+ {
+  "id": "126",
+  "name_de": "Magmar",
+  "name_eng": "Magmar",
+  "typ": "Feuer",
+  "kategorie": "Brenner"
+ },
+ {
+  "id": "127",
+  "name_de": "Pinsir",
+  "name_eng": "Pinsir",
+  "typ": "Käfer",
+  "kategorie": "Kneifkäfer"
+ },
+ {
+  "id": "128",
+  "name_de": "Tauros",
+  "name_eng": "Tauros",
+  "typ": "Normal",
+  "kategorie": "Wildbulle"
+ },
+ {
+  "id": "129",
+  "name_de": "Karpador",
+  "name_eng": "Magikarp",
+  "typ": "Wasser",
+  "kategorie": "Fisch"
+ },
+ {
+  "id": "130",
+  "name_de": "Garados",
+  "name_eng": "Gyarados",
+  "typ": "Wasser - Flug",
+  "kategorie": "Grausam"
+ },
+ {
+  "id": "131",
+  "name_de": "Lapras",
+  "name_eng": "Lapras",
+  "typ": "Wasser - Eis",
+  "kategorie": "Transport"
+ },
+ {
+  "id": "132",
+  "name_de": "Ditto",
+  "name_eng": "Ditto",
+  "typ": "Normal",
+  "kategorie": "Transform"
+ },
+ {
+  "id": "133",
+  "name_de": "Evoli",
+  "name_eng": "Eevee",
+  "typ": "Normal",
+  "kategorie": "Evolution"
+ },
+ {
+  "id": "134",
+  "name_de": "Aquana",
+  "name_eng": "Vaporeon",
+  "typ": "Wasser",
+  "kategorie": "Blubblase"
+ },
+ {
+  "id": "135",
+  "name_de": "Blitza",
+  "name_eng": "Jolteon",
+  "typ": "Elektro",
+  "kategorie": "Blitz"
+ },
+ {
+  "id": "136",
+  "name_de": "Flamara",
+  "name_eng": "Flareon",
+  "typ": "Feuer",
+  "kategorie": "Flamme"
+ },
+ {
+  "id": "137",
+  "name_de": "Porygon",
+  "name_eng": "Porygon",
+  "typ": "Normal",
+  "kategorie": "Virtuell"
+ },
+ {
+  "id": "138",
+  "name_de": "Amonitas",
+  "name_eng": "Omanyte",
+  "typ": "Gestein - Wasser",
+  "kategorie": "Spirale"
+ },
+ {
+  "id": "139",
+  "name_de": "Amoroso",
+  "name_eng": "Omastar",
+  "typ": "Gestein - Wasser",
+  "kategorie": "Spirale"
+ },
+ {
+  "id": "140",
+  "name_de": "Kabuto",
+  "name_eng": "Kabuto",
+  "typ": "Gestein - Wasser",
+  "kategorie": "Schaltier"
+ },
+ {
+  "id": "141",
+  "name_de": "Kabutops",
+  "name_eng": "Kabutops",
+  "typ": "Gestein - Wasser",
+  "kategorie": "Schaltier"
+ },
+ {
+  "id": "142",
+  "name_de": "Aerodactyl",
+  "name_eng": "Aerodactyl",
+  "typ": "Gestein - Flug",
+  "kategorie": "Fossil"
+ },
+ {
+  "id": "143",
+  "name_de": "Relaxo",
+  "name_eng": "Snorlax",
+  "typ": "Normal",
+  "kategorie": "Tagträumer"
+ },
+ {
+  "id": "144",
+  "name_de": "Arktos",
+  "name_eng": "Articuno",
+  "typ": "Eis - Flug",
+  "kategorie": "Eis"
+ },
+ {
+  "id": "145",
+  "name_de": "Zapdos",
+  "name_eng": "Zapdos",
+  "typ": "Elektro - Flug",
+  "kategorie": "Elektro"
+ },
+ {
+  "id": "146",
+  "name_de": "Lavados",
+  "name_eng": "Moltres",
+  "typ": "Feuer - Flug",
+  "kategorie": "Flamme"
+ },
+ {
+  "id": "147",
+  "name_de": "Dratini",
+  "name_eng": "Dratini",
+  "typ": "Drache",
+  "kategorie": "Drache"
+ },
+ {
+  "id": "148",
+  "name_de": "Dragonir",
+  "name_eng": "Dragonair",
+  "typ": "Drache",
+  "kategorie": "Drache"
+ },
+ {
+  "id": "149",
+  "name_de": "Dragoran",
+  "name_eng": "Dragonite",
+  "typ": "Drache - Flug",
+  "kategorie": "Drache"
+ },
+ {
+  "id": "150",
+  "name_de": "Mewtu",
+  "name_eng": "Mewtwo",
+  "typ": "Psycho",
+  "kategorie": "Genmutant"
+ },
+ {
+  "id": "151",
+  "name_de": "Mew",
+  "name_eng": "Mew",
+  "typ": "Psycho",
+  "kategorie": "Neue Art"
+ }
+],
+
+}

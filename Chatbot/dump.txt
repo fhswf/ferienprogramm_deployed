@@ -1,0 +1,104 @@
+dump:
+- intent: query_typ
+  examples: |
+    - Nenne mir ein [Pokemon]{"entity": "object_type", "value": "pokemon"}  mit dem [Typen]{"entity": "object_type", "value": "typ"} [Feuer](typ).
+    - Kannst du mir ein [Pokemon]{"entity": "object_type", "value": "pokemon"}   mit [Typ]{"entity": "object_type", "value": "typ"} [Wasser](typ)nennen?
+    - Welche [Pokemon]{"entity": "object_type", "value": "pokemon"}   haben den [Typ]{"entity": "object_type", "value": "typ"} [Pflanze](typ)?
+    - Sag mir welches [Pokemon]{"entity": "object_type", "value": "pokemon"} den [Typ]{"entity": "object_type", "value": "typ"} [Elektro](typ) hat.
+    - Nenne mir [Pokemons]{"entity": "object_type", "value": "pokemon"} mit  [Typ]{"entity": "object_type", "value": "typ"} [Unlicht](typ). 
+ 
+- intent: search_pokemon
+  examples: |
+    - Suche nach [Glurak](pokemon_name)
+    - Was ist [Nidoran](pokemon_name).
+    - Welches Pokemon ist [Kingler](pokemon_name).
+    - Welchen Typen hat [Glurak](pokemon_name)
+    - Was ist ein [Dragonir](pokemon_name).
+    - Gibt es [Taubsi](pokemon_name).
+    - Nenne mir den Typ von [Mauzi](pokemon_name).
+    - Ich möchte mehr über [Rasaff](pokemon_name) erfahren.
+    - Sag mir was [Schiggy](pokemon_name) für ein Pokemon ist.
+
+- intent: tell_name
+  examples: |
+    - Kennst du noch meinen Namen?
+    - Kannst du dich noch an meinen Namen erinnern?
+    - Kannst du mir nochmal meinen Namen nennen?
+    - Sag mir meinen Namen.
+    - Wie heiße ich?
+    - Was ist mein Name?
+    - Sag mir wie ich heiße.
+    - Weißt du noch meinen Namen?
+    - Weißt du noch wie ich heiße?
+    - Erinnerst du dich an meinen Namen?
+    - Wie ist mein Name?
+    - Kennst du meinen Namen?
+    - Wiederhole meinen Namen.
+    - Wiederhole bitte nochmal meinen Namen.
+    - Kennst du noch meinen Vornamen?
+    - Weißt du noch meinen Vornamen?
+    
+- intent: repeat_name
+  examples: |
+    - Weißt du wie ich heiße?
+    - Kennst du meinen Namen?
+    - Soll ich dir meinen Namen sagen?
+    - Willst du wissen wie ich heiße?
+
+- intent: give_name    
+  examples: |
+    - Mein Name ist [Julia](name)
+    - Ich heiße [Nadine](name)
+    - Man nennt mich [Hanna](name)
+    - Ich bin der [Yasin](name)
+    - Ich bin [Ali](name).
+    - Meine Eltern haben mich [Yasemin](name) getauft.
+    - Ich bin [Mustafa](name)
+    - Mein Name lautet [Maria](name).
+
+- story: name path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tell_name
+  - action: utter_ask_name
+  - intent: give_name
+  - action: action_receive_name
+  - intent: repeat_name
+  - action: action_say_name
+  
+class MyKnowledgeBaseAction(ActionQueryKnowledgeBase):
+    def __init__(self):
+        knowledge_base = InMemoryKnowledgeBase("data/pokemon.json")
+        super().__init__(knowledge_base)
+
+class ActionSearchPokemon(Action):
+
+    def name(self):
+        return "action_search_pokemon"
+
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        name_pokemon = tracker.get_slot("pokemon_name")
+
+        if name_pokemon == None:
+            dispatcher.utter_message(response="utter_pokemon_not_found")
+            return [AllSlotsReset()]
+
+        if name_pokemon:
+            req = requests.get(POKEAPI_URL + "pokemon/" + name_pokemon.lower())
+
+        if req.status_code == 404:
+            dispatcher.utter_message(response="utter_pokemon_not_found")
+            return [AllSlotsReset()]
+
+        info = req.json()
+        info_id_pokemon = str(info.get("id"))
+        info_name_pokemon = info.get("name").title()
+        info_type_pokemon = ", ".join(
+            [POKEMON_TIPOS.get(t.get("type").get("name")) for t in info.get("types")])
+        
+        return [AllSlotsReset()]

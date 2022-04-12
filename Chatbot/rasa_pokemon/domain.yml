@@ -1,0 +1,141 @@
+version: '3.1'
+intents:
+- affirm
+- ash
+- ask_berries
+- bot_challenge
+- confirm_exist
+- demand_joke
+- deny
+- didnt_understand
+- favorite_pokemon
+- forms
+- goodbye
+- greet
+- history
+- how_many
+- mood_great
+- mood_unhappy
+- pikachu
+- poke_partner
+- regions
+- types
+- what_is_pokemon
+entities:
+- pokemon_name
+slots:
+  pokemon_name:
+    type: text
+    mappings:
+    - type: custom
+      action: action_check_existence
+responses:
+  utter_greet:
+  - text: Hey, wie gehts dir? Möchtest du etwas zu Pokemon wissen?
+  - text: Hallo, wie gehts?
+  - text: Guten Tag, hast du eine Frage zu Pokemon?
+  - text: Hallöchen, wie gehts?
+  - text: Hallo, kann ich dir eine Frage zu Pokemon beantworten?
+  utter_cheer_up:
+  - text: 'Hier ist etwas, was dich aufheitern sollte:'
+    image: https://i.pinimg.com/originals/65/15/ff/6515fff25bdd8f04cbf3e5dbd4a4ed00.png
+  utter_help:
+  - text: Kann ich dir behilflich sein? Stell deine Frage ruhig.
+  - text: Falls du eine Frage hast, stell sie ruhig.
+  utter_good_ask_rephrase:
+  - text: Kann ich dir sonst noch helfen?
+  - text: Gibt es sonst noch etwas wo ich helfen kann?
+  utter_sad_ask_rephrase:
+  - text: Tut mir leid, kann ich dir sonst noch helfen?
+  utter_did_that_help:
+  - text: Konnte ich helfen?
+  - text: Hat das geholfen?
+  utter_happy:
+  - text: Super!
+  - text: Sehr gut.
+  utter_goodbye:
+  - text: Tschüss!
+  - text: Auf Wiedersehen!
+  - text: Bis später!
+  - text: Bye, bis zum nächsten Mal!
+  utter_ask_name:
+  - text: Wie heißt du?
+  - text: Wie lautet dein Name?
+  utter_iamabot:
+  - text: Ich bin ein Rasa Bot, gefüttert von Julia.
+  utter_joke:
+  - text: Looooos Pikachu, Donnerblitz! - Alter, hast du gerade meinen Hamster in die Steckdose geworfen??
+  - text: Wie heißt die Weiterentwicklung von Woingenau? Dagehtslang!
+  - text: Chuck Norris hat alle Pokémon gefangen – mit einem Festnetz-Telefon.
+  - text: Wenn Chuck Norris ein Pokémon wär, würde es Trainer fangen gehen!
+  - text: Alle Pokemon fliegen im Flugzeug. Nur nicht Blubella, das hängt im Propeller.
+  - text: Womit wäscht sich ein Shuppet die Haare? Mit Schnuppenshampoo.
+  - text: Was will ein Voltobal beim Bäcker? Rumkugeln.
+  - text: Was wiegt 1,8kg, sitzt auf einem Baum und ist gefährlich? Ein Taubsi mit einer Pistole.
+  utter_faq_whatispokemon:
+  - text: Pokémon (dt. Taschen-Monster) sind fiktive Lebewesen, die meist auf Tieren, Pflanzen oder Gegenständen basieren. In den Pokemonspielen schlüpft der/die Spieler/in in die Rolle eines Pokémon-Trainers, der vor allem zwei wichtige Aufgaben im Spielverlauf zu erfüllen hat. Zum einen gilt es den Pokédex, der die Daten aller gesehenen und gefangenen Pokémon speichert, zu vervollständigen. Das zweite Ziel besteht darin, möglichst starke Pokémon zu fangen und diese zu trainieren, sodass man mithilfe dieses Teams die Pokémon-Liga bezwingt und somit der neue Champ der Region wird. Nicht nur in den Spielen werden diese Ziele verfolgt, auch im Anime und Manga, sowie im Sammelkartenspiel liegt der Schwerpunkt im Erreichen dieser. (Pokewiki)
+  utter_faq_how_many:
+  - text: Aktuell gibt es 908 Pokémon. Hier findest du jedoch erstmal nur die ersten 151 Pokemon.
+  utter_faq_ash:
+  - text: Ash Ketchum ist der Hauptcharakter des Pokémon-Animes und kommt somit in nahezu jeder Episode der Anime-Hauptreihe vor. Er ist der Sohn von Delia Ketchum, welche zusammen mit ihrem Pantimos in Ashs Heimatstadt Alabastia lebt; es ist wenig über seinen Vater bekannt. Von dem dort lebenden Professor Eich bekommt er auch sein erstes Pokémon; es ist aber keines der bekannten Starter-Pokémon Kantos, Bisasam, Glumanda oder Schiggy, sondern ein Pikachu. (Pokewiki)
+  utter_faq_pikachu:
+  - text: Ash erhält Pikachu in der ersten Episode des Animes von Professor Eich, obwohl er die Verteilung der Starter-Pokémon eigentlich verpasst hat. Pikachu hasst es in seinem Pokéball zu bleiben und kann Ash zu Beginn ihrer gemeinsamen Reise nicht leiden. Trotzdem werden sie im Laufe ihrer Reise beste Freunde. Pikachu lehnt es ab, sich weiterzuentwickeln, denn seiner Meinung nach würde es dann seine Kraft alleine dem Donnerstein verdanken. Außerdem wäre dies die Bestätigung, dass Raichu generell Pikachu gegenüber überlegen seien, was nicht seiner Auffassung entspricht. (Pokewiki)
+  utter_faq_berries:
+  - text: Da Beeren ein Teil der Natur sind, können sie von Pokémon, im Gegensatz zu von Menschen hergestellten Items wie Tränken, ohne Probleme eigenständig im Kampf genutzt werden, falls sie von ihnen getragen werden. Während sich einige Beeren ausschließlich auf Kraftpunkte oder andere Statuswerte der Pokémon auswirken, beeinflussen viele Exemplare auch Fleiß-Punkte oder die Volltrefferquote. Allerdings existieren auch viele Beeren, die keinen besonderen Effekt aufweisen und lediglich als Zutaten für Knurspe oder Pokériegel gedacht sind. (Pokewiki)
+  utter_faq_history:
+  - text: Erfunden und ursprünglich herausgebracht von Satoshi Tajiri und der von ihm gegründeten japanischen Softwarefirma GAME FREAK inc. stellt Pokémon neben Super Mario mittlerweile eine der wichtigsten Marken für Nintendo dar. 1996 wurde in Japan die ersten Pokémon-Spiele herausgebracht, dem mehrere Anime-Serien, ein Sammelkartenspiel, bislang 23 animierte Kinofilme, ein Realfilm, mehrere Manga-Reihen und weitere Merchandising-Produkte folgten. (Pokewiki)
+  utter_favorite_pokemon:
+  - text: Ja, ich habe ein Lieblingspokemon. Mein Liebling ist Lapras! Hier hast du ein Bild von dem Pokemon.
+    image: https://www.pokewiki.de/images/4/4c/Solidads_Lapras.png
+  utter_poke_partner:
+  - text: 'Dein Pokepartner wäre:'
+  utter_poke_choose:
+  - text: Glumanda
+  - text: Schiggy
+  - text: Bisasam
+  - text: Evoli
+  - text: Endivie
+  - text: Feurigel
+  - text: Karnimani
+  - text: Geckarbor
+  - text: Flemmli
+  - text: Hydropi
+  - text: Chelast
+  - text: Panflam
+  - text: Plinfa
+  - text: Serpifeu
+  - text: Floink
+  - text: Ottaro
+  - text: Igamaro
+  - text: Fynx
+  - text: Froxy
+  - text: Bauz
+  - text: Flamiau
+  - text: Robball
+  - text: Chimpep
+  - text: Hopplo
+  - text: Memmeon
+  utter_satisfied:
+  - text: Bist du zufrieden, oder willst du nochmal schauen?
+  - text: Bist du zufrieden, mit meiner Wahl?
+  - text: Ich glaube ich habe damit das perfekte Pokemon für dich ausgesucht!
+  utter_didnt_understand:
+  - text: Oh, das tut mir leid.
+  - text: Entschuldige, ich lerne noch.
+  - text: Manchmal verstehe ich Menschen leider noch nicht so gut.
+  utter_regions:
+  - text: 'In der Hauptreihe sind bisher acht Regionen erschienen. Diese sind, in Reihenfolge ihres Auftretens, Kanto, Johto, Hoenn, Sinnoh, Einall, Kalos, Alola und Galar. '
+  utter_types:
+  - text: Die verschiedenen Pokemontypen lauten, Normal, Feuer, Wasser, Pflanze, Elektro, Eis, Kampf, Gift, Boden, Flug, Psycho, Käfer, Gestein, Geist, Drache, Unlicht, Stahl, Fee. Hier ein Bild von Giga zu den einzelnen Stärken und Schwächen.
+    image: https://static.giga.de/wp-content/uploads/2018/12/pokemon-typen-effektiv-tabelle-schwaechen-staerken-grafik.jpg
+  utter_forms:
+  - text: Es gibt mehrere Arten zu unterschiedlichen Formen. Es gibt zum Beispiel die Gigadynamaximierung, Megaentwicklung, Regionalformen, Formwandler und Formen durch den Fangort oder durch verschiedene Items die man vergeben hat.
+  - text: Es gibt bei Pokemon viele Arten von Formen. Beispielsweise können gleiche Pokemonarten aus verschiedenen Regionen anders aussehen. In Alola sind 18 Pokémon mit Regionalformen bekannt, die allesamt ursprünglich aus Kanto stammen. Es gibt aber auch noch mehrere Arten von Entwicklungen oder ähnlichem was das Aussehen beeinflussen kannen.
+actions:
+- action_check_existence
+- utter_did_that_help
+- utter_faq_whatispokemon
+- utter_favorite_pokemon
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,211 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_help
+  
+- story: demand joke
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: demand_joke
+  - action: utter_joke
+  - action: utter_good_ask_rephrase
+  
+- story: poke partner sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: poke_partner
+  - action: utter_poke_partner
+  - action: utter_poke_choose
+  - action: utter_satisfied
+  - intent: deny
+  - action: utter_poke_partner
+  - action: utter_poke_choose
+  - action: utter_satisfied
+  
+- story: poke partner happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: poke_partner
+  - action: utter_poke_partner
+  - action: utter_poke_choose
+  - action: utter_satisfied
+  - intent: affirm
+  - action: utter_happy
+  - action: utter_good_ask_rephrase
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - action: utter_good_ask_rephrase
+  
+- story: didnt understand deny
+  steps:
+  - intent: didnt_understand
+  - action: utter_didnt_understand
+  - action: utter_good_ask_rephrase
+  - intent: deny
+  - action: utter_goodbye
+
+- story: didnt understand affirm
+  steps:
+  - intent: didnt_understand
+  - action: utter_didnt_understand
+  - action: utter_good_ask_rephrase
+  - intent: affirm
+  - action: utter_help
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sad_ask_rephrase
+  - intent: deny
+  - action: utter_goodbye
+  
+- story: pokemon happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_is_pokemon
+  - action: utter_faq_whatispokemon
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_good_ask_rephrase
+
+- story: pokemon sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_is_pokemon
+  - action: utter_faq_whatispokemon
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sad_ask_rephrase
+
+- story: how_many
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: how_many
+  - action: utter_faq_how_many
+  
+- story: ash
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ash
+  - action: utter_faq_ash
+  - action: utter_did_that_help
+  
+- story: berries
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_berries
+  - action: utter_faq_berries
+  - action: utter_did_that_help
+  
+- story: pikachu
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pikachu
+  - action: utter_faq_pikachu
+  - action: utter_did_that_help
+
+- story: history
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: history
+  - action: utter_faq_history
+  - action: utter_did_that_help
+
+- story: forms
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: forms
+  - action: utter_forms
+  - action: utter_did_that_help
+  
+- story: types
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: types
+  - action: utter_types
+  - action: utter_did_that_help
+
+- story: regions
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: regions
+  - action: utter_regions
+  - action: utter_did_that_help
+  
+- story: existance good
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: confirm_exist
+  - action: action_check_existence
+  
+- story: favorite_pokemon
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: favorite_pokemon
+  - action: utter_favorite_pokemon
+
+- story: existance check
+  steps:
+  - intent: confirm_exist
+    entities:
+    - pokemon_name: Pixi
+  - action: action_check_existence
+  - intent: confirm_exist
+    entities:
+    - pokemon_name: Raichu
+  - action: action_check_existence
+  - intent: confirm_exist
+    entities:
+    - pokemon_name: Piepi
+  - action: action_check_existence
+  - intent: confirm_exist
+    entities:
+    - pokemon_name: Zabdiop
+  - action: action_check_existence
+  - intent: confirm_exist
+    entities:
+    - pokemon_name: Rasa
+  - action: action_check_existence
+
+- story: interactive_story_2
+  steps:
+  - intent: what_is_pokemon
+  - action: utter_faq_whatispokemon
+  - action: utter_did_that_help
+  - intent: favorite_pokemon
+  - action: utter_favorite_pokemon
