@@ -1,3 +1,3 @@
 # Ferienprogramm KI
 
-Ferienprogramm KI der Fachhochschule Südwestfalen für 2022.
+Ferienprogramm KI der Fachhochschule SÃ¼dwestfalen fÃ¼r 2022.
