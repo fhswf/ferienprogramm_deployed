@@ -179,6 +179,11 @@ stories:
   - intent: favorite_pokemon
   - action: utter_favorite_pokemon
 
+- story: check weather
+  steps:
+  - intent: weather
+  - action: action_check_weather
+
 - story: existance check
   steps:
   - intent: confirm_exist
