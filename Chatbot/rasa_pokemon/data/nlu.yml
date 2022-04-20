@@ -1,5 +1,9 @@
 version: "3.1"
 nlu:
+- intent: weather
+  examples: |
+    - Wie ist das Wetter?
+    - Wie wird das Wetter?
 - intent: greet
   examples: |
     - Grüß Gott!
