@@ -20,6 +20,7 @@ intents:
 - poke_partner
 - regions
 - types
+- weather
 - what_is_pokemon
 entities:
 - pokemon_name
@@ -136,6 +137,7 @@ actions:
 - utter_did_that_help
 - utter_faq_whatispokemon
 - utter_favorite_pokemon
+- action_check_weather
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
