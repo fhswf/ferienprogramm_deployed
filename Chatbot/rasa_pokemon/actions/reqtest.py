@@ -5,10 +5,6 @@ import json
 import asyncio
 
 from rasa_sdk.executor import CollectingDispatcher
-#r = requests.get('https://pokeapi.co/api/v2/pokemon/bulbasaur')
-
-#j = json.loads(r.text)
-#print(j)
 
 class getFromWiki:
     def getPokemon(self, name: str, dispatcher: CollectingDispatcher):
@@ -25,13 +21,9 @@ class getFromWiki:
         self.j = json.loads(r.text)
         dispatcher.utter_message("Name des Pokemon: " + name_given )
         dispatcher.utter_message("\n")
-        self.getAbilities(dispatcher)
         self.getBasicInformation(dispatcher)
+        self.getAbilities(dispatcher)
         self.getForms(dispatcher)
-
-    def getFirstOnformation(self):
-        j = self.j
-        #TODO writeName
 
     def getAbilities(self, dispatcher):
         j = self.j
