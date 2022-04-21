@@ -12,6 +12,9 @@ import requests
 import python_weather
 import asyncio
 
+from .reqtest import getFromWiki
+
+
 class ActionCheckExistence(Action):
     knowledge = Path("data/pokenames.txt").read_text().split("\n")
 
@@ -50,4 +53,25 @@ class ActionCheckWeather(Action):
         await self.getweather(dispatcher)
             
         return []
-   
+
+class ActionGetAbilities(Action):
+    knowledge = Path("data/pokenames.txt").read_text().split("\n")
+
+    def run(self, dispatcher: CollectingDispatcher, 
+            tracker: Tracker, 
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        print("Hallo")
+
+        for blob in tracker.latest_message['entities']:
+            print(tracker.latest_message)
+            if blob['entity'] == 'pokemon_name':
+                name = blob['value']
+                if name in self.knowledge:
+                    getFromWiki().getPokemon(name, dispatcher)
+                else:
+                    dispatcher.utter_message(text=f"Ich kenne {name} nicht.")
+        return []
+    
+    def name(self) -> Text:
+        return "action_get_pokemon"
