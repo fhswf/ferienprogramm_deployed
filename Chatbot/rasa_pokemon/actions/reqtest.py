@@ -6,15 +6,16 @@ import asyncio
 
 from rasa_sdk.executor import CollectingDispatcher
 
+
 class getFromWiki:
     def getPokemon(self, name: str, dispatcher: CollectingDispatcher):
         print(dispatcher)
         pname_DE = json.loads(requests.get('https://raw.githubusercontent.com/sindresorhus/pokemon/main/data/de.json').text)
         pname_EN = json.loads(requests.get('https://raw.githubusercontent.com/sindresorhus/pokemon/main/data/en.json').text)
         for x in range(len(pname_DE)):
-            if pname_DE[x] == name.title():
-                pname_USE = pname_EN[x].title()
-                name_given = pname_DE[x].title()
+            if pname_DE[x] == name:
+                pname_USE = pname_EN[x]
+                name_given = pname_DE[x]
                 break
 
         r = requests.get('https://pokeapi.co/api/v2/pokemon/' + pname_USE.lower())
@@ -28,7 +29,7 @@ class getFromWiki:
     def getAbilities(self, dispatcher):
         j = self.j
         abilities = j["abilities"]
-        dispatcher.utter_message("\n Anzahl Fähigkeiten: " + str(len(abilities)) + "\n")
+        dispatcher.utter_message("\nAnzahl Fähigkeiten: " + str(len(abilities)) + "\n")
         if len(abilities) >= 1:
             a1 = abilities[0]
             a1_name = a1["ability"]["name"]
@@ -117,7 +118,6 @@ class getFromWiki:
         is_default = j["is_default"]
         en_name = j["name"]
         weight = j["weight"]
-        dispatcher.utter_message(text = "\n")
         dispatcher.utter_message(text = "Base EXP: " + str(base_exp))
         dispatcher.utter_message(text = "Höhe: " + str(height))
         dispatcher.utter_message(text = "ID: " + str(id))
@@ -162,4 +162,3 @@ class getFromWiki:
             dispatcher.utter_message(text = "Default-Form für Pokemon: " + str(f_is_default))
             dispatcher.utter_message(text = "Battle-only: " + str(f_is_battle_only))
             dispatcher.utter_message(text = "Mega-only: " + str(f_is_mega))
-
