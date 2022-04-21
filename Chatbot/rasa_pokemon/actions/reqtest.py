@@ -12,9 +12,9 @@ class getFromWiki:
         pname_DE = json.loads(requests.get('https://raw.githubusercontent.com/sindresorhus/pokemon/main/data/de.json').text)
         pname_EN = json.loads(requests.get('https://raw.githubusercontent.com/sindresorhus/pokemon/main/data/en.json').text)
         for x in range(len(pname_DE)):
-            if pname_DE[x] == name:
-                pname_USE = pname_EN[x]
-                name_given = pname_DE[x]
+            if pname_DE[x] == name.title():
+                pname_USE = pname_EN[x].title()
+                name_given = pname_DE[x].title()
                 break
 
         r = requests.get('https://pokeapi.co/api/v2/pokemon/' + pname_USE.lower())
