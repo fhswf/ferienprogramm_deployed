@@ -29,7 +29,9 @@ class getFromWiki:
     def getAbilities(self, dispatcher):
         j = self.j
         abilities = j["abilities"]
-        dispatcher.utter_message("\nAnzahl Fähigkeiten: " + str(len(abilities)) + "\n")
+        dispatcher.utter_message("\n")
+        dispatcher.utter_message("Anzahl Fähigkeiten: " + str(len(abilities)))
+        dispatcher.utter_message("\n")
         if len(abilities) >= 1:
             a1 = abilities[0]
             a1_name = a1["ability"]["name"]
