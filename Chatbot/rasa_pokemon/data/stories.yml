@@ -206,6 +206,13 @@ stories:
     entities:
     - pokemon_name: Rasa
   - action: action_check_existence
+  
+  - story: get pokemon info
+  steps:
+  - intent: pokemon_info
+    entities:
+    - pokemon_name: Bisasam
+  - action: action_get_pokemon
 
 - story: interactive_story_2
   steps:
