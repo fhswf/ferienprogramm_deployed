@@ -1,5 +1,10 @@
 version: "3.1"
 nlu:
+- intent: pokemon_info
+  examples: |
+    - Erzähl mir etwas über [Bisasam](pokemon_name).
+    - Was weißt du über [Rattfratz](pokemon_name)?
+    - Welche Eigenschaften hat [Sadan](pokemon_name)?
 - intent: weather
   examples: |
     - Wie ist das Wetter?
