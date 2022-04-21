@@ -18,6 +18,7 @@ intents:
 - mood_unhappy
 - pikachu
 - poke_partner
+- pokemon_info
 - regions
 - types
 - weather
@@ -28,8 +29,8 @@ slots:
   pokemon_name:
     type: text
     mappings:
-    - type: custom
-      action: action_check_existence
+    - type: from_entity
+      entity: pokemon_name
 responses:
   utter_greet:
   - text: Hey, wie gehts dir? Möchtest du etwas zu Pokemon wissen?
@@ -138,6 +139,7 @@ actions:
 - utter_faq_whatispokemon
 - utter_favorite_pokemon
 - action_check_weather
+- action_get_pokemon
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
