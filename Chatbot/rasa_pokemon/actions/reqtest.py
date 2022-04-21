@@ -28,6 +28,7 @@ class getFromWiki:
     def getAbilities(self, dispatcher):
         j = self.j
         abilities = j["abilities"]
+        dispatcher.utter_message("\n Anzahl Fähigkeiten: " + str(len(abilities)) + "\n")
         if len(abilities) >= 1:
             a1 = abilities[0]
             a1_name = a1["ability"]["name"]
@@ -161,3 +162,4 @@ class getFromWiki:
             dispatcher.utter_message(text = "Default-Form für Pokemon: " + str(f_is_default))
             dispatcher.utter_message(text = "Battle-only: " + str(f_is_battle_only))
             dispatcher.utter_message(text = "Mega-only: " + str(f_is_mega))
+
