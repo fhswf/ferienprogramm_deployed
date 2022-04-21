@@ -61,8 +61,6 @@ class ActionGetAbilities(Action):
             tracker: Tracker, 
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        print("Hallo")
-
         for blob in tracker.latest_message['entities']:
             print(tracker.latest_message)
             if blob['entity'] == 'pokemon_name':
