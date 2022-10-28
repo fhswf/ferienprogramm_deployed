@@ -19,6 +19,6 @@ Siehe [MNIST Notebook](MNIST.ipynb)
   ```
   git clone https://github.com/fhswf/FerienkursKI.git
   ```
-3. Öffnen Sie das [Notebook zur Bildklassifikation](Bildklassifikation/MNIST.ipynb)
+3. Öffnen Sie das Notebook `MNIST.ipynb` im Ordner Bildklassifikation.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fhswf/FerienkursKI)
