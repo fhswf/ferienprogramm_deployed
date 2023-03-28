@@ -21,4 +21,4 @@ Siehe [MNIST Notebook](MNIST.ipynb)
     ```
 3. Öffnen Sie das Notebook `MNIST.ipynb` im Ordner Bildklassifikation.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fhswf/FerienkursKI)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fhswf/FerienkursKI/blob/main/Bildklassifikation/MNIST.ipynb)
