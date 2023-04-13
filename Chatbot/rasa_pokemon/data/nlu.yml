@@ -304,7 +304,6 @@ nlu:
     - Was sind Pokemons?
     - Erzähl was über Pokemons
     - Erzähl mir mehr über Pokemon.
-    - Ist [Piepi](pokemon_name) ein Pokemon
     - Was ist ein Pokemon?
 - intent: how_many
   examples: |
@@ -449,6 +448,7 @@ nlu:
     - Ist [Raichu](pokemon_name) ein Pokemon
     - Ist [Zabdiop](pokemon_name) ein Pokemon?
     - Kann man [Rasa](pokemon_name) ein Pokemon nennen?
+    - Ist [Piepi](pokemon_name) ein Pokemon
 - synonym: pokemon
   examples: |
     - pokemons
