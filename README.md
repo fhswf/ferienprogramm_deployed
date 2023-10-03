@@ -3,7 +3,7 @@
 Ferienprogramm KI der Fachhochschule Südwestfalen für 2022.
 
 ## Tag 1: Neuronales Netz für Ziffernerkennung
-Siehe [MNIST Notebook](MNIST.ipynb)
+Siehe [MNIST Notebook](Bildklassifikation/MNIST.ipynb)
 
 ## Tag 2: KI für Snake
 Siehe Ordner [SnakeAI](SnakeAI)
@@ -22,5 +22,6 @@ Siehe Ordner [Chatbot](Chatbot)
     git clone https://github.com/fhswf/FerienkursKI.git
     ```
 3. Öffnen Sie das Notebook `MNIST.ipynb` im Ordner Bildklassifikation.
+
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fhswf/FerienkursKI/blob/main/Bildklassifikation/MNIST.ipynb)
