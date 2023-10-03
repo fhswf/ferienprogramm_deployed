@@ -1,4 +1,5 @@
 **/__pycache__/
+**/.ipynb_checkpoints/ 
 Chatbot/rasa_pokemon/models
 Chatbot/rasa_pokemon/.rasa/cache
 Chatbot/rasa_pokemon/.rasa/cache/cache.db

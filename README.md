@@ -1,6 +1,6 @@
 # Ferienprogramm KI
 
-Ferienprogramm KI der Fachhochschule Südwestfalen für 2022.
+Ferienprogramm KI der Fachhochschule Südwestfalen für 2023.
 
 ## Tag 1: Neuronales Netz für Ziffernerkennung
 Siehe [MNIST Notebook](Bildklassifikation/MNIST.ipynb)
