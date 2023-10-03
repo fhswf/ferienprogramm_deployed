@@ -5,6 +5,11 @@ Ferienprogramm KI der Fachhochschule Südwestfalen für 2023.
 ## Tag 1: Neuronales Netz für Ziffernerkennung
 Siehe [MNIST Notebook](Bildklassifikation/MNIST.ipynb)
 
+### Training der Bildklassifikation auf dem KI-Cluster der Fachhochschule Südwestfalen
+
+1. Melde Dich sich unter [ki.fh-swf.de/jupyterhub](https://www.ki.fh-swf.de/jupyterhub) an. Die Zugangsdaten erhälst Du im Kurs.
+2. Klicke **danach** auf diesen [Link](https://www.ki.fh-swf.de/jupyterhub/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Ffhswf%2FFerienkursKI.git&urlpath=lab%2Ftree%2FFerienkursKI.git%2FBildklassifikation%2FMNIST.ipynb&branch=main) 
+
 ## Tag 2: KI für Snake
 Siehe Ordner [SnakeAI](SnakeAI)
 
@@ -13,15 +18,6 @@ Siehe Ordner [Chatbot](Chatbot)
 
 
 
-
-## Training der Bildklassifikation auf dem JuptyerHub der Fachhochschule Südwestfalen
-
-1. Melden Sie sich unter [ki.fh-swf.de/jupyterhub](https://www.ki.fh-swf.de/jupyterhub) an. Die Zugangsdaten erhalten Sie im Kurs.
-2. Öffnen Sie nach den Anweisungen im Kurs ein Terminal und geben Sie dort folgenden Befehl ein:
-    ```
-    git clone https://github.com/fhswf/FerienkursKI.git
-    ```
-3. Öffnen Sie das Notebook `MNIST.ipynb` im Ordner Bildklassifikation.
 
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fhswf/FerienkursKI/blob/main/Bildklassifikation/MNIST.ipynb)
